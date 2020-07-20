@@ -1,0 +1,73 @@
+<!-- You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+
+User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
+
+User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+
+User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
+
+
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+        <form action="" id="form">
+            <label for="" class="field-label" id="name-label">Name:</label>
+            <input type="text" class="form-field" id="name" name="name" placeholder="What's your name?">
+            
+            <label for="" class="field-label" id="email-label">E-mail:</label>
+            <input type="text" class="form-field" id="e-mail" name="e-mail" placeholder="What's your e-mail?"> <!-- Must be validated -->
+            
+            <label for="" class="field-label" id="number-label">Age:</label> 
+            <input type="number" class="form-field" id="number" name="age" placeholder="What's your age?"> <!-- Must be validated -->
+
+            <div id="radio">
+                <label for="" class="field-label" id="dev-label">Choose your rank as developer:</label> <br>
+                <input type="radio" value="student" name="rank"> <label for="student">Student</label> <br>
+                <input type="radio" value="junior" name="rank"> <label for="junior">Junior</label> <br>
+                <input type="radio" value="middle" name="rank"> <label for="middle">Middle</label> <br>
+                <input type="radio" value="senior" name="rank"> <label for="senior">Senior</label> <br>
+            </div>
+
+            <div id="select">
+                <label for="" class="field-label" id="feature-label">Choose your favorite feature:</label>
+                <select class="form-field" name="feature" id="dropdown">
+                    <option value="">Please choose</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="classes">Classes</option>
+                    <option value="forum">Forum</option>
+                </select>
+            </div>
+
+            <div id="checkbox">
+                <label for="" class="field-label" id="area-label">Choose your developer area:</label> <br>
+                <input type="checkbox" value="frontend" name="area"> <label for="frontend">Front-end</label> <br>
+                <input type="checkbox" value="backend" name="area"> <label for="backend">Back-end</label> <br>
+                <input type="checkbox" value="devops" name="area"> <label for="devops">Dev-ops</label> <br>
+            </div> 
+
+            <label for="" class="field-label" id="comments-label">Additional comments:</label> <br>
+            <textarea name="" id="comments" cols="30" rows="10"></textarea>
+            <button id="submit" name="">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
