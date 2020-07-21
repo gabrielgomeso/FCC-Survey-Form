@@ -1,13 +1,3 @@
-<!-- You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
-
-User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
-
-User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
-
-User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
-
-
--->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -25,15 +15,15 @@ User Story #9: If I enter numbers outside the range of the number input, which a
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
 
-        <form action="" id="form">
+        <form action="#" id="form">
             <label for="" class="field-label" id="name-label">Name:</label>
-            <input type="text" class="form-field" id="name" name="name" placeholder="What's your name?">
+            <input type="text" class="form-field" id="name" name="name" placeholder="What's your name?" required>
             
             <label for="" class="field-label" id="email-label">E-mail:</label>
-            <input type="text" class="form-field" id="e-mail" name="e-mail" placeholder="What's your e-mail?"> <!-- Must be validated -->
+            <input type="email" class="form-field" id="e-mail" name="e-mail" placeholder="What's your e-mail?" required> 
             
             <label for="" class="field-label" id="number-label">Age:</label> 
-            <input type="number" class="form-field" id="number" name="age" placeholder="What's your age?"> <!-- Must be validated -->
+            <input type="number" class="form-field" id="number" min="10" max="89" name="age" placeholder="What's your age?" required> 
 
             <div id="radio">
                 <label for="" class="field-label" id="dev-label">Choose your rank as developer:</label> <br>
@@ -63,7 +53,7 @@ User Story #9: If I enter numbers outside the range of the number input, which a
 
             <label for="" class="field-label" id="comments-label">Additional comments:</label> <br>
             <textarea name="" id="comments" cols="30" rows="5"></textarea>
-            <button id="submit" name="">Submit</button>
+            <button id="submit" name="" onclick="validForm()">Submit</button>
 
         </form>
     </div>
